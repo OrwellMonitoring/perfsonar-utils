@@ -3,6 +3,7 @@ from datetime import datetime
 from kafka import KafkaProducer
 import requests
 import warnings
+import logging
 import json
 import math
 
