@@ -1,0 +1,18 @@
+{
+  "tasks": [
+    { "type": "throughput", "args": [ "--duration", "PT20S" ] },
+    { "type": "throughput", "args": [ "--duration", "PT20S", "--udp" ] },
+    { "type": "rtt", "args": [] },
+    { "type": "latency", "args": [] }
+  ],
+  "schedule": {
+    "repeat": "PT30M"
+  },
+  "archive": {
+    "archiver": "esmond",
+    "data": {
+        "url": "https://10.0.12.81/esmond/perfsonar/archive",
+        "verify-ssl": false
+    }
+  }
+}
